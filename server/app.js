@@ -9,10 +9,11 @@ const PORT = 3000 || process.env.PORT;
 const app = express();
 
 app.use("/graphql", graphqlHTTP({
-    schema
+    schema,
+    graphiql: true
 }));
 
 app.listen(PORT, () => {
-  console.log("Now listening to listening requests on localhost:" + PORT);
+  console.log("Now listening to listening requests on http://localhost:" + PORT);
 });
 
