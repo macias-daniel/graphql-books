@@ -4,7 +4,7 @@ const { graphqlHTTP } = require("express-graphql");
 const mongoose = require('mongoose')
 const schema = require('./schema/schema')
 
-const PORT = 3000 || process.env.PORT;
+const PORT = 4000 || process.env.PORT;
 
 // Call express function to create app
 const app = express();
